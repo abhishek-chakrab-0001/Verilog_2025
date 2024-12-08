@@ -2,7 +2,7 @@ module arbiter(clk,rst,req,grant);
    input clk;
    input rst;
    input [1:0] req;
-   input [1:0] grant;
+   output reg [1:0] grant;
 
    parameter idle = 0;
    parameter s_01 = 1;
